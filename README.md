@@ -1,8 +1,23 @@
 Data Science I Final Project
+Fall 2017
 Sage Hahn
-~readme~
 
-readme.txt - Please see the readme.txt for information on readme.txt
+In this project I investigated the
+different ways that large unlabeled datasets
+can be leveraged for common binary text
+classification tasks. In particular I wanted to
+improve upon 'naive' strategies like
+keyword searches, as well as with
+established supervised learning tasks, my
+efforts constituting for the most part
+'semi-supervised learning' techniques, and
+therefore require varying levels of user
+input. I present an array of techniques, both
+successful, but also unsuccessful, and back
+up each attempt with extensive
+experimentation. I also provide
+insights as to why certain methods succeed
+over others.
 
 report_SAHAHN.pdf - Contains the final report in pdf form, where the bulk of the analysis takes place.
 
