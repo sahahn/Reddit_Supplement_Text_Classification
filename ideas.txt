@@ -1,0 +1,28 @@
+﻿Journal of research idea entries as they occur
+Sage Hahn
+
+-12/3/17: After some very initial data analysis with the reddit data, a simple key word search, and then a quick training of the classifier, I can tell there are going to be some big road blocks. The first and most obvious one is the question of how many text posts of class not X, should I include when training the classifier for X? The other small issue is going to be in, if a post contains a key word, but the post is also 2-3 paragraphs or something, how should I deal with these edge cases? It also occurred to me that while perhaps very difficult, it might be interesting to try and incorporate also the posts immediately following or prior to flagged posts? 
+	The question of pre-processing, how much/when also occurs to me. I think a reasonable first step is just running some data exploration on a dataset that has been just set to lowercase, but in later stages I definitely think it would be appropriate to test some more interesting methods like stemming or lemmatization- I have a feeling that would help a good deal. Another important pre-processing step is looking like breaking any unreasonably long chunk of text into multiple instead., ideally in some sort of smart way, e.g. after a period. A few hours later, I actually found a useful library NLTK, and one its functions is splitting data up into sentences, I guess I might give that a whirl.
+
+-12/4/17: As I start to evaluate a few different types of pre-processing, I realize that the question of which classifier to use might be rather complicated. Considering the latest advances in using ANN, or CNN’s in text classification, or even boltzman machines, its clear that I won’t be able to easily test all of the different approaches. As I think about it, the important question I’d like to answer right away is trying my method on an established problem, with an established technique. 
+
+-12/5/17: In order to actually evaluate my technique I need to compare it against some benchmark, I am starting with the 20 newsgroups dataset from sklearn. The first big thing is converting the problem to one more similar to my own, namely, one of binary text classification vs. classifying all the different classes. In some ways this problem is actually proving a little bit difficult, as the question of what ratio of data to use as Not Class X becomes important. In essence it has become an additional hyperparameter. 
+
+-12/7/17: I am almost done running the pre-proccessing steps for all of my datasets, which will allow me to continue on with evaluating my method. I chose to run the steps only once for each dataset, and to then save the processed arrays. This will end up saving a lot of time as I won’t have to repeat this quite computationally intense process over and over.
+
+-12/8/17: After running a key word search, and attempting to train a classifier from just the results found there, I realized that this attempt was fairly naive. I still believe it was worth running and testing, but the results were severely lacking. Though what I hope to test is just how training a classifier from these key words would preform versus a simple keyword search.
+
+-12/9/17: As expected, the classifier trained from just a keyword search on the unlabeled corpus did not preform well. It did however, beat the performance by just using the keywords. I plan to test using keywords found from a better look at the data next, both on it’s own and as a supplement in the supervised learning activity. I have fairly high hopes for it’s use as a supplement, but am really starting to doubt the merit of using this type of technique by itself. 
+
+
+-12/10/17: I’m starting to think a better title to my research question might be, how not to improve test classifier performance using a large unlabeled dataset… so  that’s not very encouraging. I do have a few different things I can try, but for the most part, I’m running out of time to try anything too big. I didn’t quite expect when stating this project that each step would just physically take as long as it does, so that’s definitely a large bottle neck. The other large bottle neck being just not having all that much time to do the project, and having this be only one of four large term projects I have to work on. 
+
+-12/11/17 I suppose it is alright to have a research question fail, if everything succeeded that’d be great, but there is always value in asking questions. As I work on my final report, I ended up testing the news dataset with an implementation of word2vec, and get absurdly accurate results. So in any further work, I am sure to pursue something along that line instead.
+
+
+
+
+
+
+
+
